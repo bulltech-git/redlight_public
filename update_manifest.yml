@@ -1,7 +1,7 @@
 name: Update Music Manifest
 
-# Trigger ONLY when audio files change
 on:
+  # Trigger on new MP3 uploads
   push:
     paths:
       - '**.mp3'
@@ -9,8 +9,10 @@ on:
       - '**.wav'
     branches:
       - main
+  
+  # Trigger Manually (The "Run Now" Button)
+  workflow_dispatch:
 
-# Give the bot permission to write to your repo
 permissions:
   contents: write
 
@@ -22,7 +24,7 @@ jobs:
 
       - name: Generate Manifest JSON
         run: |
-          # Python script to scan folder and write music.json
+          # Scans the ROOT folder for audio files
           python3 -c "import os, json; files = [{'filename': f} for f in sorted(os.listdir('.')) if f.lower().endswith(('.mp3', '.m4a', '.wav'))]; print(json.dumps(files, indent=2))" > music.json
 
       - name: Commit and Push Manifest
@@ -30,5 +32,5 @@ jobs:
           git config --global user.name 'Manifest Bot'
           git config --global user.email 'bot@noreply.github.com'
           git add music.json
-          # Check if anything changed; if yes, commit and push.
+          # Only push if music.json actually changed
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update music.json" && git push)

@@ -27,6 +27,7 @@ jobs:
         run: |
           # Python script to scan folder and write music.json
           python3 -c "import os, json; files = [{'filename': f, 'sizeBytes': os.path.getsize(f)} for f in sorted(os.listdir('.')) if f.lower().endswith(('.mp3', '.m4a', '.wav'))]; print(json.dumps(files, indent=2))" > music.json
+      
       - name: Commit and Push Manifest
         run: |
           git config --global user.name 'Manifest Bot'

@@ -7,7 +7,7 @@ By hosting our asset library here, we ensure the main application remains lightw
 ## 📱 Download the App
 Experience the full immersive therapy session with physics-based interactions and spatial audio.
 
-[**📲 Download on the App Store**](https://apps.apple.com/app/id6449202094) *(Replace this with your actual App Store Link)*
+[**📲 Download on the App Store**](https://apps.apple.com/app/id6449202094) 
 
 ---
 

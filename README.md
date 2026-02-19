@@ -53,8 +53,8 @@ To add new music to the app:
     * *If you are a copyright holder and believe a file is here in error, please open an Issue.*
 
 ---
-**Marketing Website:** [RedLightForYourEyes.com](https://www.RedLightForYourEyes.com) (RedLightForYourEyes.com)
+**Marketing Website:** [RedLightForYourEyes.com](https://www.RedLightForYourEyes.com) 
 
-**Developer Website:** [bullte.ch](https://www.bullte.ch) (bullte.ch)
+**Developer Website:** [bullte.ch](https://www.bullte.ch) 
 
 **Keywords:** *Red Light Therapy, Apple Vision Pro, visionOS, iOS, Relaxation, Meditation, 670nm, Binaural Beats, Mindful Minutes, HealthKit, Spatial Audio, SwiftUI.*
